@@ -47,10 +47,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
       <SEO
-        title="Victor Kibiwott - Portfolio | Alternative View"
-        description="Alternative portfolio view showcasing Victor Kibiwott's skills in MERN stack development, web design, and full-stack solutions."
-        keywords="Victor Kibiwott, Portfolio, MERN Stack, Web Development, Full Stack Developer"
-        url={typeof window !== 'undefined' ? window.location.href : 'https://victorkibiwott.com/land'}
+        title="Elvis Kibet - Portfolio | Alternative View"
+        description="Alternative portfolio view showcasing Elvis Kibet's skills in MERN stack development, web design, and full-stack solutions."
+        keywords="Elvis Kibet, Portfolio, MERN Stack, Web Development, Full Stack Developer"
+        url={typeof window !== 'undefined' ? window.location.href : 'https://elviski bet.com/land'}
       />
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
@@ -95,7 +95,7 @@ const Portfolio = () => {
             }}
           >
             <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-              <span className="text-4xl font-bold text-gray-800">VK</span>
+              <span className="text-4xl font-bold text-gray-800">EK</span>
             </div>
           </motion.div>
 
@@ -103,7 +103,7 @@ const Portfolio = () => {
             className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400"
             whileHover={{ scale: 1.05 }}
           >
-            Victor Kibiwott
+            Elvis Kibet
           </motion.h1>
 
           <motion.p
@@ -122,13 +122,13 @@ const Portfolio = () => {
             transition={{ delay: 0.8 }}
           >
             <a
-              href="mailto:victo33720kibiwott@gmail.com"
+              href="mailto:elviskibet111@gmail.com"
               className="px-6 py-3 bg-purple-500 rounded-full hover:bg-purple-600 transition-all duration-300"
             >
               Contact Me
             </a>
             <a
-              href="http://www.linkedin.com/in/victor-kibiwott-b85537240"
+              href="http://www.linkedin.com/in/elvis-kibet"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border-2 border-purple-500 rounded-full hover:bg-purple-500 transition-all duration-300"

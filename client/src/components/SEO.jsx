@@ -12,10 +12,10 @@ import { useEffect } from 'react';
  * @param {string} props.type - Open Graph type (website, article, etc.)
  */
 const SEO = ({
-  title = 'Victor Kibiwott - Full Stack Developer Portfolio',
-  description = 'Portfolio of Victor Kibiwott, a skilled Full Stack Developer specializing in MERN stack, React, Node.js, and modern web technologies. Explore projects, experience, and certifications.',
-  keywords = 'Victor Kibiwott, Full Stack Developer, MERN Stack, React Developer, Node.js, Web Development, Portfolio, JavaScript, MongoDB, Express',
-  author = 'Victor Kibiwott',
+  title = 'Elvis Kibet - Full Stack Developer Portfolio',
+  description = 'Portfolio of Elvis Kibet, a skilled Full Stack Developer specializing in MERN stack, React, Node.js, and modern web technologies. Explore projects, experience, and certifications.',
+  keywords = 'Elvis Kibet, Full Stack Developer, MERN Stack, React Developer, Node.js, Web Development, Portfolio, JavaScript, MongoDB, Express',
+  author = 'Elvis Kibet',
   image = '/qin.jpeg',
   url = typeof window !== 'undefined' ? window.location.href : '',
   type = 'website',
@@ -50,14 +50,14 @@ const SEO = ({
     updateMetaTag('og:image', image, true);
     updateMetaTag('og:url', url, true);
     updateMetaTag('og:type', type, true);
-    updateMetaTag('og:site_name', 'Victor Kibiwott Portfolio', true);
+    updateMetaTag('og:site_name', 'Elvis Kibet Portfolio', true);
 
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
     updateMetaTag('twitter:image', image);
-    updateMetaTag('twitter:creator', '@victorkibiwott');
+    updateMetaTag('twitter:creator', '@elviski bet');
 
     // Canonical URL
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -82,14 +82,14 @@ const SEO = ({
     const jsonLd = {
       '@context': 'https://schema.org',
       '@type': 'Person',
-      name: 'Victor Kibiwott',
+      name: 'Elvis Kibet',
       jobTitle: 'Full Stack Developer',
       description: description,
       url: url,
       image: image,
       sameAs: [
         'https://github.com/Victorkib',
-        'https://www.linkedin.com/in/victor-kibiwott-b85537240',
+        'https://www.linkedin.com/in/elvis-kibet',
       ],
       knowsAbout: [
         'MERN Stack',
@@ -103,7 +103,7 @@ const SEO = ({
       ],
       alumniOf: {
         '@type': 'EducationalOrganization',
-        name: 'Machakos University',
+        name: 'Catholic University of East Africa',
       },
     };
 
@@ -120,4 +120,3 @@ const SEO = ({
 };
 
 export default SEO;
-
