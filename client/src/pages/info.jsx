@@ -20,6 +20,7 @@ import {
   Globe,
   Cloud,
   Lock,
+  Phone,
 } from 'lucide-react';
 import SEO from '../components/SEO';
 
@@ -341,10 +342,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
       <SEO
-        title="Victor Kibiwott - Developer Info & Technology Stack"
-        description="Detailed information about Victor Kibiwott's technology expertise, projects, and development skills. Explore the tech stack, projects, and professional journey."
-        keywords="Victor Kibiwott, Technology Stack, Developer Info, Projects, Skills, MERN Stack"
-        url={typeof window !== 'undefined' ? window.location.href : 'https://victorkibiwott.com/info'}
+        title="Elvis Kibet - Developer Info & Technology Stack"
+        description="Detailed information about Elvis Kibet's technology expertise, projects, and development skills. Explore the tech stack, projects, and professional journey."
+        keywords="Elvis Kibet, Technology Stack, Developer Info, Projects, Skills, MERN Stack, Catholic University of East Africa"
+        url={typeof window !== 'undefined' ? window.location.href : 'https://github.com/elviskibet111'}
       />
       {/* Background Effects */}
       <ParticleField />
@@ -378,7 +379,7 @@ const Portfolio = () => {
                 backgroundSize: '200% 100%',
               }}
             >
-              Victor Kibiwott
+              Elvis Kibet
             </motion.h1>
             <p className="text-2xl text-slate-300 mb-8">
               Digital Craftsman & MERN Stack Developer
@@ -545,7 +546,7 @@ const Portfolio = () => {
                     Bachelor of Science in Computer Science
                   </h4>
                   <p className="text-slate-300">
-                    Machakos University • Ongoing
+                    Catholic University of East Africa • Awaiting graduation
                   </p>
                 </div>
                 <div>
@@ -553,9 +554,16 @@ const Portfolio = () => {
                     High School Diploma
                   </h4>
                   <p className="text-slate-300">
-                    Anestar Boys High School Lanet • 2021
+                    St Patrick Boys High School • 2021
                   </p>
                   <p className="text-purple-400">Final Grade: B</p>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold mb-2">
+                    Primary School Certificate
+                  </h4>
+                  <p className="text-slate-300">Green View Primary School • 2016</p>
+                  <p className="text-purple-400">Total marks: 391</p>
                 </div>
               </div>
             </motion.div>
@@ -604,9 +612,9 @@ const Portfolio = () => {
               Currently seeking new opportunities to contribute to innovative
               projects and grow as a developer.
             </p>
-            <div className="flex justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
               <motion.a
-                href="mailto:victo33720kibiwott@gmail.com"
+                href="mailto:elviskibet111@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-purple-500 rounded-full font-semibold"
@@ -614,7 +622,16 @@ const Portfolio = () => {
                 Email Me
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/victor-kibiwott-b85537240"
+                href="tel:+254790366157"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-slate-600 rounded-full font-semibold inline-flex items-center gap-2"
+              >
+                <Phone className="w-5 h-5" />
+                +254 790 366 157
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/elvis-kibet"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

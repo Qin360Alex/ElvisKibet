@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, ExternalLink, Github, Terminal, Eye, Brain, X, Briefcase, Calendar, Award, Star, Zap, Users, CheckCircle, ArrowRight, Download, Mail, Linkedin, Twitter, Instagram, MapPin, Sparkles, Building, School, AlertCircle, Loader2, Axis3DIcon, FileText, Trophy } from 'lucide-react';
+import { Code2, ExternalLink, Github, Terminal, Eye, Brain, X, Briefcase, Calendar, Award, Star, Zap, Users, CheckCircle, ArrowRight, Download, Mail, Linkedin, Twitter, Instagram, MapPin, Sparkles, Building, School, AlertCircle, Loader2, Axis3DIcon, FileText, Trophy, Phone } from 'lucide-react';
 import axios from 'axios';
 import { jsPDF } from 'jspdf';
 import 'jspdf-autotable';
@@ -413,24 +413,24 @@ const Portfolio = () => {
   const education = [
     {
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'Machakos University',
-      period: '2020 - Present',
+      institution: 'Catholic University of East Africa',
+      period: '2020 - Present (awaiting graduation)',
       description:
-        'I successfully completed a four-year Bachelor of Science in Computer Science program, gaining a solid foundation in software development, data structures and algorithms, databases, artificial intelligence, and cybersecurity. For my final year project, I developed a full-stack mobile application to support mental health assessments using the MERN stack. During my studies, I actively participated in university technology events, coding bootcamps, and collaborative software development projects. I am currently awaiting graduation and official degree conferment.',
+        'Pursuing a Bachelor of Science in Computer Science with a solid foundation in software development, data structures and algorithms, databases, artificial intelligence, and cybersecurity. For my final year project, I developed a full-stack mobile application to support mental health assessments using the MERN stack. During my studies, I actively participated in university technology events, coding bootcamps, and collaborative software development projects. I am currently awaiting graduation and official degree conferment.',
     },
     {
       degree: 'High School Diploma',
-      institution: 'Anestar Boys High School Lanet',
+      institution: 'St Patrick Boys High School',
       period: '2017 - 2021',
       description:
         'I earned a solid overall grade of B in the Kenya Certificate of Secondary Education, with strong performance in Mathematics, Physics, and Computer Studies, while actively participating in the ICT club, science and technology fairs, and demonstrating leadership and teamwork through academic group projects and extracurricular activities',
     },
     {
       degree: 'Primary School Certificate',
-      institution: 'Immaculate Parochial School',
+      institution: 'Green View Primary School',
       period: 'December 2016',
       description:
-        'Achieved a cumulative score of 375 with standout results in Mathematics, English, and Science. Actively involved in the Computer Club and participated in various science and technology exhibitions. Showcased strong leadership, collaboration, and problem-solving abilities through group assignments and co-curricular activities. Consistently maintained a disciplined academic record, earning recognition for reliability and dedication.',
+        'Achieved a cumulative score of 391 with standout results in Mathematics, English, and Science. Actively involved in the Computer Club and participated in various science and technology exhibitions. Showcased strong leadership, collaboration, and problem-solving abilities through group assignments and co-curricular activities. Consistently maintained a disciplined academic record, earning recognition for reliability and dedication.',
     },
   ];
 
@@ -470,11 +470,11 @@ const Portfolio = () => {
   // Resume data for PDF generation
   const resumeData = {
     personalInfo: {
-      name: 'VICTOR KIBIWOTT',
+      name: 'ELVIS KIBET',
       address: '81-20103',
-      phone: '0792454039',
-      email: 'victor3720kibiwott@gmail.com',
-      linkedin: 'https://www.linkedin.com/in/victor-kibiwott-b85537240/',
+      phone: '+254790366157',
+      email: 'elviskibet111@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/elvis-kibet',
       summary:
         'Tech professional with hands-on experience in both front-end and back-end development. Adept at designing user interfaces, building server-side applications, and ensuring database integrity. Committed to delivering quality software solutions through collaborative teamwork and continuous learning of new technologies.',
     },
@@ -503,24 +503,24 @@ const Portfolio = () => {
     education: [
       {
         degree: 'COMPUTER SCIENCE',
-        institution: 'MACHAKOS UNIVERSITY',
-        period: 'SEPTEMBER 2025',
+        institution: 'CATHOLIC UNIVERSITY OF EAST AFRICA',
+        period: 'AWAITING GRADUATION',
         description:
-          'Currently pursuing a Bachelor of Science in Computer Science',
+          'Bachelor of Science in Computer Science — currently awaiting graduation and official degree conferment.',
       },
       {
         degree: 'HIGH SCHOOL CERTIFICATE',
-        institution: 'ANESTAR BOYS LANET',
+        institution: 'ST PATRICK BOYS HIGH SCHOOL',
         period: 'MARCH 2021',
         description:
           'Achieve a substantial grade of B in my Kenya Certificate of Secondary Education (KSCE)',
       },
       { // Added primary school education to resume data for PDF
         degree: 'PRIMARY SCHOOL CERTIFICATE',
-        institution: 'IMMACULATE PAROCHIAL SCHOOL',
+        institution: 'GREEN VIEW PRIMARY SCHOOL',
         period: 'DECEMBER 2016',
         description:
-          'Achieved a cumulative score of 375 with standout results in Mathematics, English, and Science.',
+          'Achieved a cumulative score of 391 with standout results in Mathematics, English, and Science.',
       },
     ],
     skills: [
@@ -568,11 +568,11 @@ const Portfolio = () => {
 
       // Set document properties
       doc.setProperties({
-        title: 'Victor Kibiwott - Resume',
+        title: 'Elvis Kibet - Resume',
         subject: 'Resume',
-        author: 'Victor Kibiwott',
+        author: 'Elvis Kibet',
         keywords: 'resume, developer, full stack',
-        creator: 'Victor Kibiwott Portfolio',
+        creator: 'Elvis Kibet Portfolio',
       });
 
       // Define colors
@@ -814,7 +814,7 @@ const Portfolio = () => {
           lightTextColor[2]
         );
         doc.text(
-          `Victor Kibiwott | Resume | Page ${i} of ${totalPages}`,
+          `Elvis Kibet | Resume | Page ${i} of ${totalPages}`,
           pageWidth / 2,
           doc.internal.pageSize.getHeight() - 10,
           { align: 'center' }
@@ -822,7 +822,7 @@ const Portfolio = () => {
       }
 
       // Save the PDF
-      doc.save('Victor_Kibiwott_Resume.pdf');
+      doc.save('Elvis_Kibet_Resume.pdf');
     } catch (error) {
       console.error('Error generating PDF:', error);
       alert('There was an error generating your resume. Please try again.');
@@ -839,7 +839,7 @@ const Portfolio = () => {
       <html>
       <head>
         <meta charset="UTF-8">
-        <title>Victor Kibiwott - Resume</title>
+        <title>Elvis Kibet - Resume</title>
         <style>
           body {
             font-family: 'Calibri', 'Arial', sans-serif;
@@ -1003,7 +1003,7 @@ const Portfolio = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
     link.href = url;
-    link.download = 'Victor_Kibiwott_Resume.doc';
+    link.download = 'Elvis_Kibet_Resume.doc';
     document.body.appendChild(link);
     link.click();
 
@@ -1415,7 +1415,7 @@ const Portfolio = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a href="#" className="text-2xl font-bold text-white">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-              Victor Kibiwott
+              Elvis Kibet
             </span>
           </a>
 
@@ -1502,10 +1502,10 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-white overflow-hidden">
       <SEO
-        title="Victor Kibiwott - Full Stack Developer Portfolio | MERN Stack Expert"
-        description="Portfolio of Victor Kibiwott, a skilled Full Stack Developer specializing in MERN stack, React, Node.js, MongoDB, and Express. Explore featured projects, professional experience, certifications from Agile Business Solutions, GDG, and Machakos University Hackfest, technical skills, and contact information."
-        keywords="Victor Kibiwott, Full Stack Developer, MERN Stack, React Developer, Node.js, MongoDB, Express, Web Development, Portfolio, JavaScript, React Native, Agile Business Solutions, GDG, Google Developer Groups, Machakos University, Hackfest Winner, Software Engineer, Frontend Developer, Backend Developer"
-        url={typeof window !== 'undefined' ? window.location.href : 'https://victorkibiwott.com'}
+        title="Elvis Kibet - Full Stack Developer Portfolio | MERN Stack Expert"
+        description="Portfolio of Elvis Kibet, a skilled Full Stack Developer specializing in MERN stack, React, Node.js, MongoDB, and Express. Explore featured projects, professional experience, certifications from Agile Business Solutions, GDG, and university hackathons, technical skills, and contact information."
+        keywords="Elvis Kibet, Full Stack Developer, MERN Stack, React Developer, Node.js, MongoDB, Express, Web Development, Portfolio, JavaScript, React Native, Agile Business Solutions, GDG, Google Developer Groups, Catholic University of East Africa, CUEA, Software Engineer, Frontend Developer, Backend Developer"
+        url={typeof window !== 'undefined' ? window.location.href : 'https://github.com/elviskibet111'}
         image="/qin.jpeg"
       />
       {/* Background Effects */}
@@ -1549,7 +1549,7 @@ const Portfolio = () => {
                     backgroundSize: '200% 100%',
                   }}
                 >
-                  Victor Kibiwott
+                  Elvis Kibet
                 </motion.h1>
                 <p className="text-xl md:text-2xl text-slate-300 mb-8">
                   Digital Craftsman & MERN Stack Developer
@@ -1583,11 +1583,11 @@ const Portfolio = () => {
                 {[
                   {
                     icon: <Github className="w-5 h-5" />,
-                    url: 'https://github.com/Victorkib',
+                    url: 'https://github.com/elviskibet111',
                   },
                   {
                     icon: <Linkedin className="w-5 h-5" />,
-                    url: 'https://www.linkedin.com/in/victor-kibiwott-b85537240/',
+                    url: 'https://www.linkedin.com/in/elvis-kibet',
                   },
                   { icon: <Twitter className="w-5 h-5" />, url: '#' },
                   { icon: <Instagram className="w-5 h-5" />, url: '#' },
@@ -2170,10 +2170,27 @@ const Portfolio = () => {
                           Email
                         </h4>
                         <a
-                          href="mailto:victo33720kibiwott@gmail.com"
+                          href="mailto:elviskibet111@gmail.com"
                           className="text-slate-300 hover:text-purple-400 transition-colors"
                         >
-                          victor3720kibiwott@gmail.com
+                          elviskibet111@gmail.com
+                        </a>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 bg-purple-600/20 rounded-full flex items-center justify-center flex-shrink-0">
+                        <Phone className="w-6 h-6 text-purple-400" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-medium text-white mb-1">
+                          Phone
+                        </h4>
+                        <a
+                          href="tel:+254790366157"
+                          className="text-slate-300 hover:text-purple-400 transition-colors"
+                        >
+                          +254 790 366 157
                         </a>
                       </div>
                     </div>
@@ -2199,12 +2216,12 @@ const Portfolio = () => {
                           LinkedIn
                         </h4>
                         <a
-                          href="www.linkedin.com/in/victor-kibiwott-b85537240"
+                          href="https://www.linkedin.com/in/elvis-kibet"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-slate-300 hover:text-purple-400 transition-colors"
                         >
-                          Victor Kibiwott
+                          Elvis Kibet
                         </a>
                       </div>
                     </div>
@@ -2218,12 +2235,12 @@ const Portfolio = () => {
                           GitHub
                         </h4>
                         <a
-                          href="https://github.com/Victorkib"
+                          href="https://github.com/elviskibet111"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-slate-300 hover:text-purple-400 transition-colors"
                         >
-                          @victorkibiwott
+                          @elviskibet111
                         </a>
                       </div>
                     </div>
@@ -2348,7 +2365,7 @@ const Portfolio = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-slate-400">
-                © {new Date().getFullYear()} Victor Kibiwott. All rights
+                © {new Date().getFullYear()} Elvis Kibet. All rights
                 reserved.
               </p>
             </div>
@@ -2357,11 +2374,11 @@ const Portfolio = () => {
               {[
                 {
                   icon: <Github className="w-5 h-5" />,
-                  url: 'https://github.com/victorkibiwott',
+                  url: 'https://github.com/elviskibet111',
                 },
                 {
                   icon: <Linkedin className="w-5 h-5" />,
-                  url: 'https://www.linkedin.com/in/victor-kibiwott-b85537240',
+                  url: 'https://www.linkedin.com/in/elvis-kibet',
                 },
                 { icon: <Twitter className="w-5 h-5" />, url: '#' },
                 { icon: <Instagram className="w-5 h-5" />, url: '#' },

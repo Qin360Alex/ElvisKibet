@@ -57,7 +57,7 @@ const SEO = ({
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
     updateMetaTag('twitter:image', image);
-    updateMetaTag('twitter:creator', '@elviski bet');
+    updateMetaTag('twitter:creator', '@elviskibet111');
 
     // Canonical URL
     let canonical = document.querySelector('link[rel="canonical"]');
@@ -88,7 +88,7 @@ const SEO = ({
       url: url,
       image: image,
       sameAs: [
-        'https://github.com/Victorkib',
+        'https://github.com/elviskibet111',
         'https://www.linkedin.com/in/elvis-kibet',
       ],
       knowsAbout: [

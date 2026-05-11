@@ -50,7 +50,7 @@ const Portfolio = () => {
         title="Elvis Kibet - Portfolio | Alternative View"
         description="Alternative portfolio view showcasing Elvis Kibet's skills in MERN stack development, web design, and full-stack solutions."
         keywords="Elvis Kibet, Portfolio, MERN Stack, Web Development, Full Stack Developer"
-        url={typeof window !== 'undefined' ? window.location.href : 'https://elviski bet.com/land'}
+        url={typeof window !== 'undefined' ? window.location.href : 'https://github.com/elviskibet111'}
       />
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
@@ -128,7 +128,7 @@ const Portfolio = () => {
               Contact Me
             </a>
             <a
-              href="http://www.linkedin.com/in/elvis-kibet"
+              href="https://www.linkedin.com/in/elvis-kibet"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border-2 border-purple-500 rounded-full hover:bg-purple-500 transition-all duration-300"
